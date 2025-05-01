@@ -6,7 +6,7 @@ This is a **mini Unity Catalog project** built as part of a Udemy course. The ob
 
 ## 🚀 Objective
 
-We have three containers (or folders) representing the Medallion Architecture:
+We have three folders representing the Medallion Architecture, these are placed inside the container `uc_mini_project`:
 
 - **Bronze**
 - **Silver**
@@ -34,8 +34,9 @@ However, since November 2024, mounts are no longer supported by Databricks. Ther
 
 1. Databricks Workspace: A Premium workspace creates Unity Catalog by default.
 2. Storage Access:
-- Created **Storage Credentials** for authentication and authorization.
+- Created **Storage Credentials** for authentication and authorization (created using Databrick Access connector service).
 - Defined an **External Location** to point to the cloud folder structure.
+
 
 ### 📁 Data Structure
 We created a container named `uc_mini_project` in Azure Data Lake with the following folder layout:
@@ -48,4 +49,7 @@ uc_mini_project/
 └── gold/
 ```
 
+All the notebooks with transformation are already available inside `/Databricks Notebooks`
+Finally these notebooks has been run using Databrick workflows
+![Databricks Workflow]('Images/Workflow%20in%20Databricks%20diagram.png')
 
