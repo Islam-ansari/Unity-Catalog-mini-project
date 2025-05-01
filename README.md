@@ -51,5 +51,5 @@ uc_mini_project/
 
 All the notebooks with transformation are already available inside `/Databricks Notebooks`
 Finally these notebooks has been run using Databrick workflows
-![Databricks Workflow]('(Images/Workflow%20in%20Databricks%20diagram.png)')
+![Databricks Workflow]((Images/Workflow%20in%20Databricks%20diagram.png))
 
