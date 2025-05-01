@@ -53,3 +53,14 @@ All the notebooks with transformation are already available inside `/Databricks 
 Finally these notebooks has been run using Databrick workflows
 ![Databricks Workflow](Images/Workflow%20in%20Databricks%20diagram.png)
 
+We can see lineage i.e. which tables got modified or what was input and what was output.
+![Lineage](Images/Data%20Lineage.png)
+
+### Learnings
+- Databricks from Nov2024? onwards don’t allow to user dbutils.fs.mounts() to access files in Storage Credentials
+- To access any files in the cloud we need to create Storage Credentials, External Location (pointing to Storage Container)
+- To create new Catalog → you need to specify MANAGED LOCATION (container@storage-acc).
+- By default now UC automatically gets created with the same name as your Databricks workspace name. You cannot modify it.
+- Only 1 Unity Catalog Metastore per region is allowed - i.e. there cannot be 2 UC Meta-store for same region.
+
+
